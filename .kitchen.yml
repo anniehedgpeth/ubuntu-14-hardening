@@ -1,0 +1,33 @@
+---
+driver:
+  name: vagrant
+# the thing that is setting up the VM
+
+provisioner:
+  name: chef_zero
+  require_chef_omnibus: 12.9.41
+  client_rb:
+    add_formatter: min
+
+# sets the machine up the way it's programmed to be set up
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+verifier: 
+  name: inspec
+# runs tests
+
+platforms:
+  - name: bento/ubuntu-14.04
+#image of a machine
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ubuntu-14-hardening::default]
+# found in recipes folder
+    attributes:  
+    verifier:
+      inspec_tests:
+#        - /Users/anniehedgpeth/ubuntu-14-cis-profile
+        - https://github.com/anniehedgpeth/ubuntu-14-cis-profile

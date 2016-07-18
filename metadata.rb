@@ -1,0 +1,7 @@
+name 'ubuntu-14-hardening'
+maintainer 'Annie Hedgpeth'
+maintainer_email 'annie.hedgpeth@gmail.com'
+license 'all_rights'
+description 'Installs/Configures ubuntu-14-hardening'
+long_description 'Installs/Configures ubuntu-14-hardening'
+version '0.1.0'
