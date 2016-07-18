@@ -29,5 +29,5 @@ suites:
     attributes:  
     verifier:
       inspec_tests:
-#        - /Users/anniehedgpeth/ubuntu-14-cis-profile
-        - https://github.com/anniehedgpeth/ubuntu-14-cis-profile
+        - /Users/anniehedgpeth/ubuntu-14-cis-profile
+#        - https://github.com/anniehedgpeth/ubuntu-14-cis-profile
