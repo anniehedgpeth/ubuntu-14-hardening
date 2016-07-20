@@ -11,3 +11,20 @@
      mode '0700'
    end
  end
+
+files={
+  'limits.conf'=> '/etc/security/limits.conf',
+  'sysctl.conf'=> '/etc/sysctl.conf'
+}
+files.each do |key,value|
+  cookbook_file value do
+    source key
+    action :create
+  end
+end
+
+['apport','whoopsie'].each do |name|
+   package name do
+     action :remove
+   end
+ end
