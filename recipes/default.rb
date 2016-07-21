@@ -33,3 +33,8 @@ end
      action :remove
    end
  end
+
+# Commented out because, while the CIS benchmark recommends it be activated, Chef cannot be run if Apparmor is enabled. 
+# service ['apparmor', 'apparmor-utils'] do
+#   action :enable
+# end
