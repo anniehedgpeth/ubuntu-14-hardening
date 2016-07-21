@@ -23,6 +23,11 @@ files.each do |key,value|
   end
 end
 
+execute 'unlink' do
+  command'/usr/sbin/prelink -ua'
+  only_if 'dpkg -s prelink'
+end
+
 ['apport','whoopsie','prelink'].each do |name|
    package name do
      action :remove
