@@ -1,0 +1,49 @@
+{
+  "revision_id": "d99976569c33e0e336f1edd7523c6b1780f53a2976754a51aa1333bd4cbfce08",
+  "name": "ubuntu-server",
+  "run_list": [
+    "recipe[ubuntu-14-hardening::default]"
+  ],
+  "cookbook_locks": {
+    "ubuntu-14-hardening": {
+      "version": "0.1.1",
+      "identifier": "a72b0ac8fc85118b33c13b287ae23adf74086661",
+      "dotted_decimal_identifier": "47053646432339217.39181926776994530.64731398825569",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://github.com/anniehedgpeth/ubuntu-14-hardening.git",
+        "revision": "d93b5a08cd898bb70b66d1a286d66936c591f266",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "ubuntu-14-hardening",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "ubuntu-14-hardening (0.1.1)": [
+
+      ]
+    }
+  }
+}

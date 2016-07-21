@@ -5,7 +5,7 @@
 # Copyright (c) 2016 Annie Hedgpeth, All Rights Reserved.
 
 ['/boot/grub/grub.cfg'].each do |name|
-   directory name do
+   file name do
      owner 'root'
      group 'root'
      mode '0700'
