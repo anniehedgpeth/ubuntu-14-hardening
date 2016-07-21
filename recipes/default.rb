@@ -23,7 +23,7 @@ files.each do |key,value|
   end
 end
 
-['apport','whoopsie'].each do |name|
+['apport','whoopsie','prelink'].each do |name|
    package name do
      action :remove
    end
