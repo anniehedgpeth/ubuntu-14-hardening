@@ -28,9 +28,9 @@ execute 'unlink' do
   only_if 'dpkg -s prelink'
 end
 
-['apport','whoopsie','prelink'].each do |name|
+['apport','whoopsie','prelink', 'nis'].each do |name|
    package name do
-     action :remove
+     action :purge
    end
  end
 
