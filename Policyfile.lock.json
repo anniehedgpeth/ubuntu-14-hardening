@@ -1,20 +1,20 @@
 {
-  "revision_id": "3da8ce09d39d6e2fa632ad1751c19a498f981820ef36c1cb4412949a255ec9f9",
+  "revision_id": "e7f8d0f66a8c51d7d9c8947cf78281ecf51c62f3c55d2e73bc6fea81b463ee51",
   "name": "ubuntu-server",
   "run_list": [
     "recipe[ubuntu-14-hardening::default]"
   ],
   "cookbook_locks": {
     "ubuntu-14-hardening": {
-      "version": "0.1.1",
-      "identifier": "88ffd192d0a70f4de42bd83c9f6baefc5795266c",
-      "dotted_decimal_identifier": "38561872409044751.21924450169298795.192398824384108",
+      "version": "0.1.2",
+      "identifier": "c93856383b07bc31b9c800fbf5e5f99db4f5155c",
+      "dotted_decimal_identifier": "56638413280577468.13996542519932389.274455741142364",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "https://github.com/anniehedgpeth/ubuntu-14-hardening.git",
-        "revision": "ce8ed49041e1ba3045c3de1307814c2cab654355",
+        "revision": "753df33b1c5b4080133504e164e6f5113c8e59b7",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -41,7 +41,7 @@
       ]
     ],
     "dependencies": {
-      "ubuntu-14-hardening (0.1.1)": [
+      "ubuntu-14-hardening (0.1.2)": [
 
       ]
     }
